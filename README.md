@@ -46,8 +46,6 @@ Default login:
 - Password: `Enterprise123!`
 
 ## Demo
-
-
 https://enterprise-operations-intelligence.vercel.app
 
 ## Notes
