@@ -45,57 +45,10 @@ Default login:
 - Email: `admin@enterprise-ops.com`
 - Password: `Enterprise123!`
 
-## Run With Docker
+## Demo
 
-```bash
-docker compose up --build
-```
 
-Frontend: http://127.0.0.1:5173  
-Backend: http://127.0.0.1:8000  
-API docs: http://127.0.0.1:8000/docs
-
-## Run Locally
-
-Backend:
-
-```bash
-cd backend
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-```
-
-Local development uses the system temporary directory for SQLite by default so login auditing and session writes work reliably across Windows launch modes. Docker uses PostgreSQL through `DATABASE_URL`.
-
-Frontend:
-
-```bash
-cd frontend
-npm.cmd install
-npm.cmd run dev
-```
-
-## API Surface
-
-- `POST /api/v1/auth/login`
-- `POST /api/v1/auth/logout`
-- `POST /api/v1/auth/refresh`
-- `POST /api/v1/auth/forgot-password`
-- `POST /api/v1/auth/reset-password`
-- `POST /api/v1/auth/change-password`
-- `GET /api/v1/dashboard`
-- `GET /api/v1/operations-center`
-- `GET /api/v1/workflows`
-- `GET /api/v1/risks`
-- `GET /api/v1/forecasts`
-- `GET /api/v1/analytics/departments`
-- `GET /api/v1/ai-insights`
-- `GET /api/v1/reports`
-- `POST /api/v1/reports`
-- `GET /api/v1/reports/export/{format}`
-- `GET /api/v1/audit-logs`
+https://enterprise-operations-intelligence.vercel.app
 
 ## Notes
 
